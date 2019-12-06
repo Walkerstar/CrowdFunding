@@ -9,7 +9,6 @@ import com.mcw.crowdfunding.service.TAdminService;
 import com.mcw.crowdfunding.util.AppDateUtils;
 import com.mcw.crowdfunding.util.Const;
 import com.mcw.crowdfunding.util.MD5Util;
-import org.apache.commons.math3.analysis.solvers.MullerSolver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

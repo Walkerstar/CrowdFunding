@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Datas {
 
-	private List<Integer> ids = new ArrayList<>();
+	private List<Integer> ids = new ArrayList<Integer>();
 	
 	
 	public List<Integer> getIds() { 

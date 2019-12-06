@@ -11,7 +11,7 @@ public class TTransactionExample {
     protected List<Criteria> oredCriteria;
 
     public TTransactionExample() {
-        oredCriteria = new ArrayList<>();
+        oredCriteria = new ArrayList<Criteria>();
     }
 
     public void setOrderByClause(String orderByClause) {

@@ -164,66 +164,6 @@ public class TPermissionExample {
             return (Criteria) this;
         }
 
-        public Criteria andPidIsNull() {
-            addCriterion("pid is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andPidIsNotNull() {
-            addCriterion("pid is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andPidEqualTo(Integer value) {
-            addCriterion("pid =", value, "pid");
-            return (Criteria) this;
-        }
-
-        public Criteria andPidNotEqualTo(Integer value) {
-            addCriterion("pid <>", value, "pid");
-            return (Criteria) this;
-        }
-
-        public Criteria andPidGreaterThan(Integer value) {
-            addCriterion("pid >", value, "pid");
-            return (Criteria) this;
-        }
-
-        public Criteria andPidGreaterThanOrEqualTo(Integer value) {
-            addCriterion("pid >=", value, "pid");
-            return (Criteria) this;
-        }
-
-        public Criteria andPidLessThan(Integer value) {
-            addCriterion("pid <", value, "pid");
-            return (Criteria) this;
-        }
-
-        public Criteria andPidLessThanOrEqualTo(Integer value) {
-            addCriterion("pid <=", value, "pid");
-            return (Criteria) this;
-        }
-
-        public Criteria andPidIn(List<Integer> values) {
-            addCriterion("pid in", values, "pid");
-            return (Criteria) this;
-        }
-
-        public Criteria andPidNotIn(List<Integer> values) {
-            addCriterion("pid not in", values, "pid");
-            return (Criteria) this;
-        }
-
-        public Criteria andPidBetween(Integer value1, Integer value2) {
-            addCriterion("pid between", value1, value2, "pid");
-            return (Criteria) this;
-        }
-
-        public Criteria andPidNotBetween(Integer value1, Integer value2) {
-            addCriterion("pid not between", value1, value2, "pid");
-            return (Criteria) this;
-        }
-
         public Criteria andNameIsNull() {
             addCriterion("name is null");
             return (Criteria) this;
@@ -291,6 +231,76 @@ public class TPermissionExample {
 
         public Criteria andNameNotBetween(String value1, String value2) {
             addCriterion("name not between", value1, value2, "name");
+            return (Criteria) this;
+        }
+
+        public Criteria andTitleIsNull() {
+            addCriterion("title is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andTitleIsNotNull() {
+            addCriterion("title is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andTitleEqualTo(String value) {
+            addCriterion("title =", value, "title");
+            return (Criteria) this;
+        }
+
+        public Criteria andTitleNotEqualTo(String value) {
+            addCriterion("title <>", value, "title");
+            return (Criteria) this;
+        }
+
+        public Criteria andTitleGreaterThan(String value) {
+            addCriterion("title >", value, "title");
+            return (Criteria) this;
+        }
+
+        public Criteria andTitleGreaterThanOrEqualTo(String value) {
+            addCriterion("title >=", value, "title");
+            return (Criteria) this;
+        }
+
+        public Criteria andTitleLessThan(String value) {
+            addCriterion("title <", value, "title");
+            return (Criteria) this;
+        }
+
+        public Criteria andTitleLessThanOrEqualTo(String value) {
+            addCriterion("title <=", value, "title");
+            return (Criteria) this;
+        }
+
+        public Criteria andTitleLike(String value) {
+            addCriterion("title like", value, "title");
+            return (Criteria) this;
+        }
+
+        public Criteria andTitleNotLike(String value) {
+            addCriterion("title not like", value, "title");
+            return (Criteria) this;
+        }
+
+        public Criteria andTitleIn(List<String> values) {
+            addCriterion("title in", values, "title");
+            return (Criteria) this;
+        }
+
+        public Criteria andTitleNotIn(List<String> values) {
+            addCriterion("title not in", values, "title");
+            return (Criteria) this;
+        }
+
+        public Criteria andTitleBetween(String value1, String value2) {
+            addCriterion("title between", value1, value2, "title");
+            return (Criteria) this;
+        }
+
+        public Criteria andTitleNotBetween(String value1, String value2) {
+            addCriterion("title not between", value1, value2, "title");
             return (Criteria) this;
         }
 
@@ -364,73 +374,63 @@ public class TPermissionExample {
             return (Criteria) this;
         }
 
-        public Criteria andUrlIsNull() {
-            addCriterion("url is null");
+        public Criteria andPidIsNull() {
+            addCriterion("pid is null");
             return (Criteria) this;
         }
 
-        public Criteria andUrlIsNotNull() {
-            addCriterion("url is not null");
+        public Criteria andPidIsNotNull() {
+            addCriterion("pid is not null");
             return (Criteria) this;
         }
 
-        public Criteria andUrlEqualTo(String value) {
-            addCriterion("url =", value, "url");
+        public Criteria andPidEqualTo(Integer value) {
+            addCriterion("pid =", value, "pid");
             return (Criteria) this;
         }
 
-        public Criteria andUrlNotEqualTo(String value) {
-            addCriterion("url <>", value, "url");
+        public Criteria andPidNotEqualTo(Integer value) {
+            addCriterion("pid <>", value, "pid");
             return (Criteria) this;
         }
 
-        public Criteria andUrlGreaterThan(String value) {
-            addCriterion("url >", value, "url");
+        public Criteria andPidGreaterThan(Integer value) {
+            addCriterion("pid >", value, "pid");
             return (Criteria) this;
         }
 
-        public Criteria andUrlGreaterThanOrEqualTo(String value) {
-            addCriterion("url >=", value, "url");
+        public Criteria andPidGreaterThanOrEqualTo(Integer value) {
+            addCriterion("pid >=", value, "pid");
             return (Criteria) this;
         }
 
-        public Criteria andUrlLessThan(String value) {
-            addCriterion("url <", value, "url");
+        public Criteria andPidLessThan(Integer value) {
+            addCriterion("pid <", value, "pid");
             return (Criteria) this;
         }
 
-        public Criteria andUrlLessThanOrEqualTo(String value) {
-            addCriterion("url <=", value, "url");
+        public Criteria andPidLessThanOrEqualTo(Integer value) {
+            addCriterion("pid <=", value, "pid");
             return (Criteria) this;
         }
 
-        public Criteria andUrlLike(String value) {
-            addCriterion("url like", value, "url");
+        public Criteria andPidIn(List<Integer> values) {
+            addCriterion("pid in", values, "pid");
             return (Criteria) this;
         }
 
-        public Criteria andUrlNotLike(String value) {
-            addCriterion("url not like", value, "url");
+        public Criteria andPidNotIn(List<Integer> values) {
+            addCriterion("pid not in", values, "pid");
             return (Criteria) this;
         }
 
-        public Criteria andUrlIn(List<String> values) {
-            addCriterion("url in", values, "url");
+        public Criteria andPidBetween(Integer value1, Integer value2) {
+            addCriterion("pid between", value1, value2, "pid");
             return (Criteria) this;
         }
 
-        public Criteria andUrlNotIn(List<String> values) {
-            addCriterion("url not in", values, "url");
-            return (Criteria) this;
-        }
-
-        public Criteria andUrlBetween(String value1, String value2) {
-            addCriterion("url between", value1, value2, "url");
-            return (Criteria) this;
-        }
-
-        public Criteria andUrlNotBetween(String value1, String value2) {
-            addCriterion("url not between", value1, value2, "url");
+        public Criteria andPidNotBetween(Integer value1, Integer value2) {
+            addCriterion("pid not between", value1, value2, "pid");
             return (Criteria) this;
         }
     }

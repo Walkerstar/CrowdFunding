@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Crowdfunding-bean" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Crowdfunding-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Crowdfunding-main" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Crowdfunding-manager-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Crowdfunding-manager-impl" charset="UTF-8" />
   </component>
 </project>

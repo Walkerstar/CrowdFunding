@@ -21,7 +21,7 @@ public class TMenuController {
 
     @ResponseBody
     @RequestMapping("/menu/doDelete")
-    public String doDelete(Integer id){
+    public String doDelete(Integer id) {
         menuService.deleteTMenu(id);
         return "ok";
     }
@@ -36,26 +36,26 @@ public class TMenuController {
     @ResponseBody
     @RequestMapping("/menu/getMenuById")
     public TMenu getMenuById(Integer id) {
-        TMenu menu=menuService.getMenuById(id);
+        TMenu menu = menuService.getMenuById(id);
         return menu;
     }
 
     @ResponseBody
     @RequestMapping("/menu/doAdd")
-    public String doAdd(TMenu menu){
+    public String doAdd(TMenu menu) {
         menuService.saveTMenu(menu);
         return "ok";
     }
 
-    @RequestMapping("/menu/index")
-    public String index(){
-        return "menu/index";
-    }
-
     @ResponseBody
     @RequestMapping("/menu/loadTree")
-    public List<TMenu> loadTree(){
-        List<TMenu> list=menuService.listMenuAllTree();
+    public List<TMenu> loadTree() {
+        List<TMenu> list = menuService.listMenuAllTree();
         return list;
+    }
+
+    @RequestMapping("/menu/index")
+    public String index() {
+        return "menu1/index";
     }
 }

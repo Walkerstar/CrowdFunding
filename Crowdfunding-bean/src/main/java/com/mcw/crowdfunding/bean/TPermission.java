@@ -3,13 +3,13 @@ package com.mcw.crowdfunding.bean;
 public class TPermission {
     private Integer id;
 
-    private Integer pid;
-
     private String name;
+
+    private String title;
 
     private String icon;
 
-    private String url;
+    private Integer pid;
 
     public Integer getId() {
         return id;
@@ -17,14 +17,6 @@ public class TPermission {
 
     public void setId(Integer id) {
         this.id = id;
-    }
-
-    public Integer getPid() {
-        return pid;
-    }
-
-    public void setPid(Integer pid) {
-        this.pid = pid;
     }
 
     public String getName() {
@@ -35,6 +27,14 @@ public class TPermission {
         this.name = name == null ? null : name.trim();
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title == null ? null : title.trim();
+    }
+
     public String getIcon() {
         return icon;
     }
@@ -43,11 +43,11 @@ public class TPermission {
         this.icon = icon == null ? null : icon.trim();
     }
 
-    public String getUrl() {
-        return url;
+    public Integer getPid() {
+        return pid;
     }
 
-    public void setUrl(String url) {
-        this.url = url == null ? null : url.trim();
+    public void setPid(Integer pid) {
+        this.pid = pid;
     }
 }

@@ -21,7 +21,7 @@
     <style>
         .tree li {
             list-style-type: none;
-            cursor:pointer;
+            cursor: pointer;
         }
     </style>
 </head>

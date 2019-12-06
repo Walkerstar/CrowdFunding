@@ -13,10 +13,5 @@
         <module name="Crowdfunding-manager-impl" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Crowdfunding-potal-api" target="1.8" />
-      <module name="Crowdfunding-potal-impl" target="1.8" />
-      <module name="Crowdfundingpotalapi" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
