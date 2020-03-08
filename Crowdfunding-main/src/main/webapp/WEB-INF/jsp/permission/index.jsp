@@ -153,6 +153,7 @@
                     pIdKey: "pid"
                 },
                 key:{
+                    url:"xUrl",
                     name:"title"
                 }
             },

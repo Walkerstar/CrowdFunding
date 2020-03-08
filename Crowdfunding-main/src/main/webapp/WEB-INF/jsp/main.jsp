@@ -41,7 +41,7 @@
 <!-- 静态包含:被包含的页面不会生成独立字节码文件.
             将所包含的页面内容加入到当前页面,一起进行编译.
  -->
-<jsp:include page="common/top.jsp"></jsp:include>
+<jsp:include page="/WEB-INF/jsp/common/top.jsp"></jsp:include>
 <div class="container-fluid">
     <div class="row">
         <jsp:include page="common/sidebar.jsp"></jsp:include>

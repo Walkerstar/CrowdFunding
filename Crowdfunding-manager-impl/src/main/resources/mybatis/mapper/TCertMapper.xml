@@ -66,6 +66,14 @@
   <sql id="Base_Column_List">
     id, name
   </sql>
+
+  <!--void deleteBatch(List<Integer> idList);-->
+    <delete id="deleteBatch">
+        delete  from t_cert where id in
+        <foreach collection="idList" close=")" open="(" separator="," item="id">
+            ${id}
+        </foreach>
+    </delete>
   <select id="selectByExample" parameterType="com.mcw.crowdfunding.bean.TCertExample" resultMap="BaseResultMap">
     select
     <if test="distinct">

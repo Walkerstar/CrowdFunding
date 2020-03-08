@@ -93,7 +93,7 @@
                                     <td>${admin.username}</td>
                                     <td>${admin.email}</td>
                                     <td>
-                                        <button type="button" class="btn btn-success btn-xs"><i
+                                        <button type="button" class="btn btn-success btn-xs" onclick="window.location.href='${PATH}/admin/toAssign?id=${admin.id}'"><i
                                                 class=" glyphicon glyphicon-check"></i></button>
                                         <button type="button" class="btn btn-primary btn-xs" onclick="window.location.href='${PATH}/admin/toUpdate?id=${admin.id}&pn=${page.pageNum}'"><i
                                                 class=" glyphicon glyphicon-pencil"></i></button>

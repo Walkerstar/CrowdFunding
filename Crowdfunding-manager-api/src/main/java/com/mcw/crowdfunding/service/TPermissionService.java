@@ -1,6 +1,7 @@
 package com.mcw.crowdfunding.service;
 
 import com.mcw.crowdfunding.bean.TPermission;
+import org.apache.ibatis.ognl.DynamicSubscript;
 
 import java.util.List;
 
@@ -17,4 +18,8 @@ public interface TPermissionService {
     void updatePermission(TPermission permission);
 
     void deletePermission(Integer id);
+
+    void assignPermissionToMenu(Integer mid, List<Integer> perIdArray);
+
+    List<TPermission> getPermissionByMenuid(Integer mid);
 }

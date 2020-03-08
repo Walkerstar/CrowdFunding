@@ -27,4 +27,6 @@ public interface TTypeMapper {
     int updateByPrimaryKeySelective(TType record);
 
     int updateByPrimaryKey(TType record);
+
+    void deleteBatch(@Param("idList") List<Integer> idList);
 }

@@ -75,6 +75,25 @@
 
 
     <dependencies>
+
+        <!--加入SpringSecurity的相关依赖-->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>4.2.10.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>4.2.10.RELEASE</version>
+        </dependency>
+        <!-- 标签库 -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-taglibs</artifactId>
+            <version>4.2.10.RELEASE</version>
+        </dependency>
+
         <!-- 公共依赖 -->
         <dependency>
             <groupId>commons-io</groupId>

@@ -30,13 +30,13 @@ public class DispatcherController {
     @Autowired
     TMenuService menuService;
 
-    @RequestMapping("/index")
+   /* @RequestMapping("/index")
     public String index(){
         log.debug("跳转到主页面");
         return "index";
-    }
+    }*/
 
-    @RequestMapping("/login")
+    @RequestMapping("/tologin")
     public String login(){
         log.debug("跳转到登录页面");
         return "login";
@@ -47,7 +47,7 @@ public class DispatcherController {
         log.debug("跳转到后台系统main页面");
 
         if(session==null){
-            return "redirect:/login";
+            return "redirect:/tologin";
         }
         List<TMenu> menus= (List<TMenu>) session.getAttribute(Const.MENULIST);
 
@@ -60,7 +60,7 @@ public class DispatcherController {
         return "main";
     }
 
-    @RequestMapping("/logout")
+    /*@RequestMapping("/logout")
     public String logout(HttpSession session) {
         log.debug("注销并跳转到主页面");
         if (session != null) {
@@ -94,5 +94,5 @@ public class DispatcherController {
             return "login";
         }
 
-    }
+    }*/
 }

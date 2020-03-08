@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
+<%@taglib prefix="sect" uri="http://www.springframework.org/security/tags" %>
 <!DOCTYPE html>
 <html lang="zh_CN">
 <head>
@@ -17,6 +18,7 @@
 
     <%@include file="/WEB-INF/jsp/common/css.jsp"%>
     <link rel="stylesheet" href="${PATH}/static/css/main.css">
+    <link rel="stylesheet" href="${PATH}/static/ztree/zTreeStyle.css">
     <style>
         .tree li {
             list-style-type: none;
@@ -50,7 +52,9 @@
                         <button id="queryBtn" type="button" class="btn btn-warning"><i class="glyphicon glyphicon-search"></i> 查询</button>
                     </form>
                     <button type="button" class="btn btn-danger" style="float:right;margin-left:10px;" id="deleteBatch"><i class=" glyphicon glyphicon-remove"></i> 删除</button>
+                    <sect:authorize access="hasRole('PM - 项目经理')">
                     <button type="button" class="btn btn-primary" style="float:right;" id="addBtn"><i class="glyphicon glyphicon-plus"></i> 新增</button>
+                    </sect:authorize>
                     <br>
                     <hr style="clear:both;">
                     <div class="table-responsive">
@@ -134,9 +138,29 @@
     </div><!-- /.modal-dialog -->
 </div>
 
+<!--分配权限的模态框-->
+<div class="modal fade" id="assignModal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="ModalLabel1">给角色分配权限</h4>
+            </div>
+            <div class="zTreeDemoBackground left">
+                <ul id="treeDemo" class="ztree"></ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" id="assignBtn">分配</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
 
 <%@include file="/WEB-INF/jsp/common/js.jsp"%>
 <script src="${PATH}/static/script/docs.min.js"></script>
+<script src="${PATH}/static/ztree/jquery.ztree.all-3.5.min.js"></script>
 <script type="text/javascript">
     $(function () {
         $(".list-group-item").click(function(){
@@ -194,9 +218,9 @@
             tr.append(' <td>'+e.name+'</td>');
 
             var td=$("<td></td>");
-            td.append('<button type="button" class="btn btn-success btn-xs"><i class=" glyphicon glyphicon-check"></i></button>');
+            td.append('<button type="button" roleId="'+e.id+'" class="btn assignPermissionClass btn-success btn-xs"><i class=" glyphicon glyphicon-check"></i></button>');
             td.append('<button type="button" roleId="'+e.id+'" class="btn updateClass btn-primary btn-xs"><i class=" glyphicon glyphicon-pencil"></i></button>');
-            td.append('<button type="button"  class="btn deleteClass btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i></button>');
+            td.append('<button type="button" roleId="'+e.id+'" class="btn deleteClass btn-danger btn-xs"><i class=" glyphicon glyphicon-remove"></i></button>');
 
             tr.append(td);
 
@@ -271,8 +295,12 @@
                         $("#addModal input[name='name']").val("");
                         initData(9999999);
                     });
+                }else if("403"==result){
+                    layer.msg("你无权访问");
+                    $("#addModal").modal('hide');
                 }else {
                     layer.msg("保存失败");
+
                 }
             }
         });
@@ -375,6 +403,107 @@
             layer.close(index);
         });
 
+    });
+
+
+    var roleId='';
+    //给角色分配权限
+    $("tbody").on("click",".assignPermissionClass",function () {
+        $("#assignModal").modal({
+            backdrop:'static',
+            keyboard:false
+
+        });
+
+        roleId=$(this).attr("roleId");
+        initTree();
+
+    });
+
+    function initTree() {
+
+        var setting = {
+            check: {
+                enable: true
+            },
+            data: {
+                simpleData: {
+                    enable: true,
+                    pIdKey: "pid"
+                },
+                key:{
+                    url:"xUrl",
+                    name:"title"
+                }
+            },
+            view: {
+                addDiyDom: function (treeId, treeNode) {
+                    $("#" + treeNode.tId + "_ico").removeClass();
+                    $("#" + treeNode.tId + "_span").before("<span class='" + treeNode.icon + "'></span>")
+                }
+            }
+
+        };
+
+        //1.加载树的数据
+        $.get("${PATH}/permission/loadTree", {}, function (result) {
+
+           var treeObj= $.fn.zTree.init($("#treeDemo"), setting, result);
+
+            treeObj.expandAll(true);
+
+            //2.回显数据
+            $.get("${PATH}/role/listPermissionIdByRoleId",{roleId:roleId}, function (result) {
+
+               $.each(result,function (i,e) {
+                   var permissionId=e;
+                   var treeObj = $.fn.zTree.getZTreeObj("treeDemo");
+                   var node = treeObj.getNodeByParam("id", permissionId, null);
+                   treeObj.checkNode(node, true, false,false);
+               });
+
+
+            });
+        });
+    }
+
+    //点击分配按钮
+    $("#assignBtn").click(function () {
+
+        var treeObj = $.fn.zTree.getZTreeObj("treeDemo");
+        var nodes = treeObj.getCheckedNodes(true);
+
+        var idList='';
+        var array=new Array();
+        $.each(nodes,function (i,e) {
+            var permissionId=e.id;
+            console.log(permissionId);
+            array.push(permissionId);
+        });
+
+        idList=array.join(",");
+
+        console.log(idList);
+
+
+        $.ajax({
+            type:"POST",
+            url:"${PATH}/role/doAssignPermissionToRole",
+            data:{
+                roleId:roleId,
+                idList:idList
+            },
+            success:function (result) {
+                if("ok"==result){
+                    layer.msg("分配成功",{time:2000,icon:6},function () {
+                        $("#assignModal").modal('hide');
+                    });
+                }else {
+                    layer.msg("分配失败",{time:2000,icon:5});
+                }
+
+            }
+        });
     });
 
 </script>

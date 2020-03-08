@@ -4,7 +4,11 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.mcw.crowdfunding.bean.TRole;
 import com.mcw.crowdfunding.service.TRoleService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -21,8 +25,40 @@ import java.util.Map;
 @Controller
 public class TRolecontroller {
 
+    Logger log=LoggerFactory.getLogger(TRolecontroller.class);
+
     @Autowired
     TRoleService roleService;
+
+    @ResponseBody
+    @RequestMapping("/role/listPermissionIdByRoleId")
+    public List<Integer> listPermissionIdByRoleId(Integer roleId){
+
+        log.debug("roleId={}",roleId);
+
+        List<Integer> list=roleService.listPermissionIdByRoleId(roleId);
+        return list;
+    }
+
+    @ResponseBody
+    @RequestMapping("/role/doAssignPermissionToRole")
+    public String doAssignPermissionToRole(Integer roleId,String idList){
+        log.debug("roleId={}",roleId);
+        log.debug("permissionIds={}",idList);
+
+        List<Integer> ids=new ArrayList<>();
+        String[] split = idList.split(",");
+
+        for (String id : split) {
+            int permissionId = Integer.parseInt(id);
+            ids.add(permissionId);
+        }
+
+        log.debug("许可ID={}",ids);
+        roleService.saveRoleAndPermissionRelationship(roleId,ids);
+        return "ok";
+    }
+
 
     @ResponseBody
     @RequestMapping("/role/doDeleteBatch")
@@ -63,6 +99,18 @@ public class TRolecontroller {
         return role;
     }
 
+
+
+    /**
+     * //@PreAuthorize("hasRole('PM-项目经理')")
+     * 1.放在此处不起作用，是因为CrowdFundingSecurityConfig的@EnableGlobalMethodSecurity(prePostEnabled = true)没有被 springMvc 扫描到，
+     *    而是被 spring 扫描到了，所以将它放到 service 层中问题解决
+     *
+     * 2.另一种解决方法
+     * 将spring容器和springmvc容器和为一体
+     * 在web.xml中将加载IOC容器的listener去掉， 让springMvc扫描spring文件
+     */
+    @PreAuthorize("hasRole('PM - 项目经理')")
     @ResponseBody
     @RequestMapping("/role/doAdd")
     public String doAdd(TRole role){

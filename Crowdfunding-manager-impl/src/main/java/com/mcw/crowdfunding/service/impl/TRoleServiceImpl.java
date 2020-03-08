@@ -3,7 +3,10 @@ package com.mcw.crowdfunding.service.impl;
 import com.github.pagehelper.PageInfo;
 import com.mcw.crowdfunding.bean.TRole;
 import com.mcw.crowdfunding.bean.TRoleExample;
+import com.mcw.crowdfunding.bean.TRolePermissionExample;
+import com.mcw.crowdfunding.mapper.TAdminRoleMapper;
 import com.mcw.crowdfunding.mapper.TRoleMapper;
+import com.mcw.crowdfunding.mapper.TRolePermissionMapper;
 import com.mcw.crowdfunding.service.TRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,6 +23,12 @@ public class TRoleServiceImpl implements TRoleService {
 
     @Autowired
     TRoleMapper roleMapper;
+
+    @Autowired
+    TAdminRoleMapper adminRoleMapper;
+
+    @Autowired
+    TRolePermissionMapper rolePermissionMapper;
 
     @Override
     public PageInfo<TRole> listRolePage(Map<String, Object> paramMap) {
@@ -63,5 +72,41 @@ public class TRoleServiceImpl implements TRoleService {
     @Override
     public void deleteTRoleBatch(List<Integer> idList) {
         roleMapper.deleteTRoleBatch(idList);
+    }
+
+    @Override
+    public List<TRole> listAllRole() {
+        return roleMapper.selectByExample(null);
+    }
+
+    @Override
+    public List<Integer> getRoleByAdminId(String id) {
+        return adminRoleMapper.getRoleByAdminId(id);
+    }
+
+    @Override
+    public void saveAdminAndRoleRelationship(Integer[] roleId, Integer adminId) {
+        adminRoleMapper.saveAdminAndRoleRelationship(roleId,adminId);
+    }
+
+    @Override
+    public void deleteAdminAndRoleRelationship(Integer[] roleId, Integer adminId) {
+        adminRoleMapper.deleteAdminAndRoleRelationship(roleId,adminId);
+    }
+
+    @Override
+    public void saveRoleAndPermissionRelationship(Integer roleId, List<Integer> ids) {
+
+        //先删除之前分配过的，然后在重新分配所有打钩的
+        TRolePermissionExample exmple=new TRolePermissionExample();
+        exmple.createCriteria().andRoleidEqualTo(roleId);
+        rolePermissionMapper.deleteByExample(exmple);
+
+        rolePermissionMapper.saveRoleAndPermissionRelationship(roleId,ids);
+    }
+
+    @Override
+    public List<Integer> listPermissionIdByRoleId(Integer roleId) {
+        return rolePermissionMapper.listPermissionIdByRoleId(roleId);
     }
 }

@@ -4,6 +4,7 @@ import com.mcw.crowdfunding.bean.TPermission;
 import com.mcw.crowdfunding.bean.TPermissionExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.ognl.DynamicSubscript;
 
 public interface TPermissionMapper {
     long countByExample(TPermissionExample example);
@@ -27,4 +28,8 @@ public interface TPermissionMapper {
     int updateByPrimaryKeySelective(TPermission record);
 
     int updateByPrimaryKey(TPermission record);
+
+    List<TPermission> listPermissionByAdminId(Integer adminId);
+
+    List<TPermission> getPermissionByMenuid(Integer mid);
 }

@@ -67,6 +67,14 @@
   <sql id="Base_Column_List">
     id, name, remark
   </sql>
+
+  <!--void deleteBatch(@Param("idList") List<Integer> idList);-->
+    <delete id="deleteBatch">
+        delete from t_type where id in
+        <foreach collection="idList" item="id" separator="," open="(" close=")" >
+            ${id}
+        </foreach>
+    </delete>
   <select id="selectByExample" parameterType="com.mcw.crowdfunding.bean.TTypeExample" resultMap="BaseResultMap">
     select
     <if test="distinct">

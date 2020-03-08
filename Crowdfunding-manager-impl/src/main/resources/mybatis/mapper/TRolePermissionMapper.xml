@@ -6,6 +6,32 @@
     <result column="roleid" jdbcType="INTEGER" property="roleid" />
     <result column="permissionid" jdbcType="INTEGER" property="permissionid" />
   </resultMap>
+
+
+    <!--void saveRoleAndPermissionRelationship(@Param("roleId") Integer roleId,@Param("ids") List<Integer> ids);-->
+    <insert id="saveRoleAndPermissionRelationship">
+        insert into t_role_permission(roleid,permissionid) values
+        <foreach collection="ids" item="id" separator=",">
+            (#{roleId},#{id})
+        </foreach>
+    </insert>
+
+
+    <!--List<Integer> listPermissionIdByRoleId(Integer roleId);-->
+    <select id="listPermissionIdByRoleId" resultType="java.lang.Integer">
+        select permissionid from t_role_permission where roleId=#{roleId}
+    </select>
+
+
+
+
+
+
+
+
+
+
+
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">

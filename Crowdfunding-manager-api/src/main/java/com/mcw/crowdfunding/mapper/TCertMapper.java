@@ -27,4 +27,6 @@ public interface TCertMapper {
     int updateByPrimaryKeySelective(TCert record);
 
     int updateByPrimaryKey(TCert record);
+
+    void deleteBatch(@Param("idList")List<Integer> idList);
 }

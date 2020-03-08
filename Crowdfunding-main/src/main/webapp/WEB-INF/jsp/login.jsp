@@ -20,39 +20,36 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <div><a class="navbar-brand" href="index.html" style="font-size:32px;">尚筹网-创意产品众筹平台</a></div>
+          <div><a class="navbar-brand" href="index.html" style="font-size:32px;">欢迎来到创意产品众筹平台后台登录系统</a></div>
         </div>
       </div>
     </nav>
 
     <div class="container">
-      <form id="loginForm" action="${PATH }/doLogin" method="POST" class="form-signin" role="form">
+      <form id="loginForm" action="${PATH}/login" method="POST" class="form-signin" role="form">
 
         <h2 class="form-signin-heading"><i class="glyphicon glyphicon-log-in"></i> 用户登录</h2>
-            <c:if test="${message != null}">
+            <c:if test="${SPRING_SECURITY_LAST_EXCEPTION != null}">
                 <div class="form-group has-success has-feedback">
-                        ${message}
+                        ${SPRING_SECURITY_LAST_EXCEPTION.message}
                 </div>
             </c:if>
 		  <div class="form-group has-success has-feedback">
-			<input type="text" class="form-control" id="floginacct" name="loginacct" value="superadmin" placeholder="请输入登录账号" autofocus>
+              <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
+			<input type="text" class="form-control" id="loginacct" name="loginacct" value="superadmin" placeholder="请输入登录账号" autofocus>
 			<span class="glyphicon glyphicon-user form-control-feedback"></span>
 		  </div>
 		  <div class="form-group has-success has-feedback">
-			<input type="password" class="form-control" id="fuserpswd" name="userpswd" value="123456" placeholder="请输入登录密码" style="margin-top:10px;">
+			<input type="password" class="form-control" id="userpswd" name="userpswd" value="123456" placeholder="请输入登录密码" style="margin-top:10px;">
 			<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 		  </div>
 
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="remember-me"> 记住我
-          </label>
-          <br>
-          <label>
-            忘记密码
+            <input type="checkbox" name="remember-me"> 记住我
           </label>
           <label style="float:right">
-            <a href="reg.html">我要注册</a>
+            <a href="#">忘记密码</a>
           </label>
         </div>
         <a class="btn btn-lg btn-success btn-block" onclick="dologin()" > 登录</a>
@@ -61,45 +58,9 @@
    <%@include file="/WEB-INF/jsp/common/js.jsp"%>
     <script>
     function dologin() {
-       /* var flgoinacct=$("#floginacct");
-        var fuserpswd=$("#fuserpswd");
-        var ftype=$("#ftype");
 
-        //对于表单数据而言不能用null进行判断,如果文本框什么都不输入,获取的值是""
-        if($.trim(flgoinacct)==""){
-            alert("用户账号不能为空，请重新输入!");
-            flgoinacct.val("");
-            flgoinacct.focus();
-            return false;
-        }else if($.trim(fuserpswd)==""){
-            alert("用户账号不能为空，请重新输入!");
-            fuserpswd.val("");
-            fuserpswd.focus();
-            return false;
-        }
 
-        $.ajax({
-            type:"POST",
-            data:{
-                loginacct:flgoinacct.val(),
-                userpswd:fuserpswd.val(),
-                type:ftype.val()
-            },
-            url:"/doLogin",
-            beforeSend:function () {
-                //一般做表单数据校验.
-                return true;
-            },
-            success:function (result) {
-                if(result.success){
-                    window.location.href="/main";
-                }else {
-                    alert("not ok");
-                }
-            }
-        });*/
-
-       if($.trim($("#floginacct").val())==""){
+       if($.trim($("#loginacct").val())===null){
            layer.msg("用户名不能为空",{time:2000,icon:5});
            return false;
        }

@@ -1,13 +1,18 @@
 package com.mcw.crowdfunding.controller;
 
 import com.mcw.crowdfunding.bean.TMenu;
+import com.mcw.crowdfunding.bean.TPermission;
 import com.mcw.crowdfunding.service.TMenuService;
+import com.mcw.crowdfunding.service.TPermissionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
+
+import static org.apache.ibatis.ognl.DynamicSubscript.mid;
 
 
 /**
@@ -18,6 +23,16 @@ public class TMenuController {
 
     @Autowired
     TMenuService menuService;
+
+    @Autowired
+    TPermissionService permissionService;
+
+    @ResponseBody
+    @RequestMapping("/menu/menu_permission")
+    public  List<TPermission>  getPermissionByMenuid(@RequestParam("menuid") Integer mid) {
+        // 查询出当前菜单能被哪些权限（自定义标识）操作
+        return permissionService.getPermissionByMenuid(mid);
+    }
 
     @ResponseBody
     @RequestMapping("/menu/doDelete")

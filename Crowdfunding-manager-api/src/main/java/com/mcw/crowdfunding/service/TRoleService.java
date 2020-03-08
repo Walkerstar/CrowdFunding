@@ -21,4 +21,16 @@ public interface TRoleService {
     void deleteTRoleById(Integer id);
 
     void deleteTRoleBatch(List<Integer> idList);
+
+    List<TRole> listAllRole();
+
+    List<Integer> getRoleByAdminId(String id);
+
+    void saveAdminAndRoleRelationship(Integer[] roleId, Integer adminId);
+
+    void deleteAdminAndRoleRelationship(Integer[] roleId, Integer adminId);
+
+    void saveRoleAndPermissionRelationship(Integer roleId, List<Integer> ids);
+
+    List<Integer> listPermissionIdByRoleId(Integer roleId);
 }

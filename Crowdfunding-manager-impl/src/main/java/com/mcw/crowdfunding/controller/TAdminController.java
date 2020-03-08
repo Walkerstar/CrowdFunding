@@ -3,14 +3,18 @@ package com.mcw.crowdfunding.controller;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.mcw.crowdfunding.bean.TAdmin;
+import com.mcw.crowdfunding.bean.TRole;
 import com.mcw.crowdfunding.service.TAdminService;
+import com.mcw.crowdfunding.service.TRoleService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,6 +31,66 @@ public class TAdminController {
 
     @Autowired
     TAdminService adminService;
+
+    @Autowired
+    TRoleService roleService;
+
+    @ResponseBody
+    @RequestMapping("admin/doUnAssign")
+    public String toUnAssign(Integer[] roleId,Integer adminId){
+        log.debug("adminId={}",adminId);
+
+        for (Integer rId : roleId) {
+            log.debug("roleId={}",rId);
+        }
+
+        roleService.deleteAdminAndRoleRelationship(roleId,adminId);
+
+        return "ok";
+    }
+
+    @ResponseBody
+    @RequestMapping("admin/doAssign")
+    public String toAssign(Integer[] roleId,Integer adminId){
+        log.debug("adminId={}",adminId);
+
+        for (Integer rId : roleId) {
+            log.debug("roleId={}",rId);
+        }
+
+        roleService.saveAdminAndRoleRelationship(roleId,adminId);
+
+        return "ok";
+    }
+
+    @RequestMapping("/admin/toAssign")
+    public String toAssign(String id,Model model){
+
+        //1.查询所有角色
+        List<TRole> allList=roleService.listAllRole();
+
+        //2.根据用户id查询已经拥有的角色id
+        List<Integer>  roleIdList=roleService.getRoleByAdminId(id);
+
+        //3.将所拥有的角色，进行划分
+        List<TRole> assignList=new ArrayList<>();
+        List<TRole> unAssignList=new ArrayList<>();
+
+        model.addAttribute("assignList",assignList);
+        model.addAttribute("unAssignList",unAssignList);
+
+        for (TRole role : allList) {
+            if(roleIdList.contains(role.getId())){
+                //4.已分配集合角色
+                assignList.add(role);
+            }else {
+                //5.未分配集合角色
+                unAssignList.add(role);
+            }
+        }
+
+        return "admin/assignRole";
+    }
 
 
     @RequestMapping("/admin/doDeleteBatch")
@@ -69,6 +133,7 @@ public class TAdminController {
         return "/admin/update";
     }
 
+    @PreAuthorize("hasRole('PM - 项目经理')")
     @RequestMapping("/admin/doAdd")
     public String doAdd(TAdmin admin){
         adminService.saveTAdmin(admin);

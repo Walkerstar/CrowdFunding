@@ -4,6 +4,7 @@ import com.mcw.crowdfunding.bean.TPermissionMenu;
 import com.mcw.crowdfunding.bean.TPermissionMenuExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.ognl.DynamicSubscript;
 
 public interface TPermissionMenuMapper {
     long countByExample(TPermissionMenuExample example);
@@ -27,4 +28,7 @@ public interface TPermissionMenuMapper {
     int updateByPrimaryKeySelective(TPermissionMenu record);
 
     int updateByPrimaryKey(TPermissionMenu record);
+
+    void insertBatch(@Param("mid") Integer mid,@Param("perIds") List<Integer> perIdArray);
+
 }

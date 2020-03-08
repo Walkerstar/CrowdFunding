@@ -67,6 +67,14 @@
   <sql id="Base_Column_List">
     id, menuid, permissionid
   </sql>
+
+  <insert id="insertBatch">
+      insert into t_permission_menu(permissionid,menuid)
+      values
+      <foreach collection="perIds" separator="," item="perId">
+          (#{perId},#{mid})
+      </foreach>
+  </insert>
   <select id="selectByExample" parameterType="com.mcw.crowdfunding.bean.TPermissionMenuExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
