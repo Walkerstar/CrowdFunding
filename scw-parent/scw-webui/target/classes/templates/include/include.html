@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--头部css文件-->
+<span th:fragment="cssStyle">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" th:href="@{/static/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" href="/css/font-awesome.min.css" th:href="@{/static/css/font-awesome.min.css}">
+    <link rel="stylesheet" href="/css/carousel.css" th:href="@{/static/css/carousel.css}">
+</span>
+
+<!--底部js文件-->
+<span id="jsStyle">
+    <script src="jquery/jquery-2.1.1.min.js" th:src="@{/static/jquery/jquery-2.1.1.min.js}"></script>
+    <script src="bootstrap/js/bootstrap.min.js" th:src="@{/static/bootstrap/js/bootstrap.min.js}"></script>
+	<script src="script/docs.min.js" th:src="@{/static/script/docs.min.js}"></script>
+    <script src="script/back-to-top.js" th:src="@{/static/script/back-to-top.js}"></script>
+</span>
+
+<!--页面头部-->
+    <div id="header" class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html" style="font-size:32px;">创意产品众筹平台</a>
+        </div>
+
+
+        <div id="navbar" th:if="${session.loginMember}==null" class="navbar-collapse collapse" style="float:right;">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.html" th:href="@{/login}">登录</a></li>
+                <li><a href="reg.html" th:href="@{/toregist}">注册</a></li>
+            </ul>
+        </div>
+
+        <div id="navbar" th:if="${session.loginMember}!=null" class="navbar-collapse collapse" style="float:right;">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> [[${session.loginMember.loginacct}]]<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="member.html" th:href="@{/member}"><i class="glyphicon glyphicon-scale"></i> 会员中心</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-comment"></i> 消息</a></li>
+                        <li class="divider"></li>
+                        <li><a href="index.html" th:href="@{/logout}"><i class="glyphicon glyphicon-off"></i> 退出系统</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+<!--页面底部-->
+<div class="container" id="footer">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div id="footer">
+                <div class="footerNav">
+                    <a rel="nofollow" href="http://www.atguigu.com">关于我们</a> | <a rel="nofollow" href="http://www.atguigu.com">服务条款</a> | <a rel="nofollow" href="http://www.atguigu.com">免责声明</a> | <a rel="nofollow" href="http://www.atguigu.com">网站地图</a> | <a rel="nofollow" href="http://www.atguigu.com">联系我们</a>
+                </div>
+                <div class="copyRight">
+                    Copyright ?2017-2017atguigu.com 版权所有
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--会员中心页面的名字显示-->
+<div class="col-md-12" id="memberName">
+    <div class="thumbnail" style="    border-radius: 0px;">
+        <img src="img/services-box1.jpg" th:src="@{/static/img/services-box1.jpg}" class="img-thumbnail" alt="">
+        <div class="caption" style="text-align:center;">
+            <h3>
+                [[${session.loginMember.realname}]]
+            </h3>
+            <span class="label label-danger" style="cursor:pointer;" th:if="${session.loginMember.authstatus}==0" th:text="未实名认证" onclick="window.location.href='/member/accttype'" >未实名认证</span>
+            <span class="label label-danger" style="cursor:pointer;" th:if="${session.loginMember.authstatus}==1" th:text="实名认证审核中" >实名认证审核中</span>
+            <span class="label label-danger" style="cursor:pointer;" th:if="${session.loginMember.authstatus}==2" th:text="已实名认证" >已实名认证</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

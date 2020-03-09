@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" th:href="@{/static/bootstrap/css/bootstrap.min.css}">
+      <link rel="stylesheet" href="css/font-awesome.min.css" th:href="@{/static/css/font-awesome.min.css}">
+      <link rel="stylesheet" href="css/theme.css" th:href="@{/static/css/theme.css}">
+	<style>
+#footer {
+    padding: 15px 0;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+	</style>
+  </head>
+  <body>
+ <div class="navbar-wrapper">
+      <div class="container">
+          <nav th:include="~{include/include::#header}" class="navbar navbar-inverse navbar-fixed-top"
+               role="navigation"></nav>
+      </div>
+    </div>
+
+    <div class="container theme-showcase" role="main">
+      <div class="page-header">
+        <h1>实名认证 - 申请</h1>
+      </div>
+
+		<ul class="nav nav-tabs" role="tablist">
+		  <li role="presentation" ><a href="#"><span class="badge">1</span> 基本信息</a></li>
+		  <li role="presentation" ><a href="#"><span class="badge">2</span> 资质文件上传</a></li>
+		  <li role="presentation" class="active"><a href="#"><span class="badge">3</span> 邮箱确认</a></li>
+		  <li role="presentation"><a href="#"><span class="badge">4</span> 申请确认</a></li>
+		</ul>
+        
+		<form role="form" style="margin-top:20px;">
+		  <div class="form-group">
+			<label for="exampleInputEmail1">邮箱地址</label>
+			<input type="text" class="form-control" id="exampleInputEmail1" placeholder="请输入用于接收验证码的邮箱地址">
+		  </div>
+          <button type="button" onclick="window.history.back()" class="btn btn-default">上一步</button>
+		  <button type="button" id="toApply3" th:href="@{/member/apply-3}"  class="btn btn-success">下一步</button>
+		</form>
+		<hr>
+    </div> <!-- /container -->
+ <div th:include="~{include/include::#footer}"></div>
+ <div th:include="~{include/include::#jsStyle}"></div>
+	<script>
+        $('#myTab a').click(function (e) {
+          e.preventDefault()
+          $(this).tab('show')
+        });
+        $("#toApply3").click(function () {
+            window.location.href=$(this).attr("href");
+        });
+	</script>
+  </body>
+</html>
