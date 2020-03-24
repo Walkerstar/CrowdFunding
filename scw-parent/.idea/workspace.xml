@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b5895c8d-2334-4057-a3e1-ccc6894f8382" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/scw-project/target/" />
+    <ignored path="$PROJECT_DIR$/scw-user/target/" />
+    <ignored path="$PROJECT_DIR$/scw-order/target/" />
+    <ignored path="$PROJECT_DIR$/scw-common/target/" />
+    <ignored path="$PROJECT_DIR$/scw-webui/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="OssTemplate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/project/component/OssTemplate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScwWebuiApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/ScwWebuiApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scw-webui/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="52" column="67" lean-forward="true" selection-start-line="52" selection-start-column="67" selection-end-line="52" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scw-webui/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectCreateController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/project/controller/ProjectCreateController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="3" selection-start-column="3" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="mybatis-cfg.xml" />
+        <option value="Enum" />
+        <option value="HTML File" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fastjson</find>
+      <find>com.alibaba</find>
+      <find>lombok.version</find>
+      <find>th:src=&quot;@{/static/static/</find>
+      <find>atguigu</find>
+      <find>mvw</find>
+      <find>item</find>
+      <find>none</find>
+      <find>login</find>
+      <find>loginMember</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>th:src=&quot;@{/static/</replace>
+      <replace>mcw</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/scw-user/src/main/java/com/mcw/scw/user/vo/resp/ProjectDetailVo.java" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/webui/service/TMemberServiceFeign.java" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/webui/service/exp/handler/TMemberServiceFeignExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/project/service/ProjectInfoService.java" />
+        <option value="$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/project/service/impl/ProjectInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/project/service/MemberServiceFeign.java" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/webui/constant/ProjectConstants.java" />
+        <option value="$PROJECT_DIR$/scw-common/src/test/java/getDaysTest.java" />
+        <option value="$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/project/service/impl/MemberServiceFeignHandler.java" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/webui/vo/resp/UserProjectVo.java" />
+        <option value="$PROJECT_DIR$/scw-user/src/main/java/com/mcw/scw/user/vo/resp/UserProjectVo.java" />
+        <option value="$PROJECT_DIR$/scw-order/src/main/java/com/mcw/scw/order/vo/resp/UserProjectVo.java" />
+        <option value="$PROJECT_DIR$/scw-order/src/main/java/com/mcw/scw/order/controller/TOrderController.java" />
+        <option value="$PROJECT_DIR$/scw-user/src/main/java/com/mcw/scw/user/service/impl/TMemberServiceImpl.java" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/resources/templates/project/index.html" />
+        <option value="$PROJECT_DIR$/scw-user/src/main/java/com/mcw/scw/user/vo/resp/UserFollowProjectVo.java" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/webui/vo/resp/UserFollowProjectVo.java" />
+        <option value="$PROJECT_DIR$/scw-user/src/main/java/com/mcw/scw/user/controller/TMbmberController.java" />
+        <option value="$PROJECT_DIR$/scw-user/src/main/java/com/mcw/scw/user/service/TMemberService.java" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/resources/templates/member/accttype.html" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/resources/templates/member/apply.html" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/resources/templates/member/apply-2.html" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/resources/templates/member/apply-3.html" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/webui/controller/TMemberController.java" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/resources/templates/member/apply-1.html" />
+        <option value="$PROJECT_DIR$/scw-common/src/main/java/com/mcw/scw/enums/ProjectStatusEnume.java" />
+        <option value="$PROJECT_DIR$/scw-common/src/main/java/com/mcw/scw/vo/resp/AppResponse.java" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/resources/templates/include/include.html" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/resources/templates/reg.html" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/resources/templates/member/minecrowdfunding.html" />
+        <option value="$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/project/controller/ProjectOperationController.java" />
+        <option value="$PROJECT_DIR$/scw-project/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/scw-user/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/webui/controller/DispatcherController.java" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/ScwWebuiApplication.java" />
+        <option value="$PROJECT_DIR$/scw-webui/pom.xml" />
+        <option value="$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/project/component/OssTemplate.java" />
+        <option value="$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/project/controller/ProjectCreateController.java" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/webui/service/TProjectServiceFeign.java" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/webui/service/exp/handler/TProjectServiceFeignExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/webui/vo/req/ProjectBaseInfoVo.java" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/webui/controller/TProjectController.java" />
+        <option value="$PROJECT_DIR$/scw-webui/src/main/resources/templates/project/start-step-1.html" />
+        <option value="$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/project/vo/req/ProjectBaseInfoVo.java" />
+        <option value="$PROJECT_DIR$/scw-user/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/scw-user/src/main/java/com/mcw/scw/user/controller/UserLoginRegistController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/scw-common/src/main/java/com/mcw/scw/util/AppDateUtils.java" />
+        <option value="$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/ScwProjectApplication.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="F:/maven/apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="F:\maven\apache-maven-3.5.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="644" />
+    <option name="y" value="68" />
+    <option name="width" value="1083" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="scw-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scw-parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scw-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scw-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="scw-webui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scw-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scw-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="scw-webui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scw-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scw-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="scw-webui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scw-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scw-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="scw-webui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scw-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scw-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="scw-webui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="scw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scw-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scw-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="scw-webui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="scw" type="462c0819:PsiDirectoryNode" />
+              <item name="webui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scw-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scw-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="scw-webui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="scw" type="462c0819:PsiDirectoryNode" />
+              <item name="webui" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\IDEAworkspace\scw-parent\scw-webui\src\main\resources\static\static" />
+      <recent name="G:\IDEAworkspace\scw-parent\scw-webui\src\main\resources\static\static\.static\.static\ztree" />
+      <recent name="G:\IDEAworkspace\scw-parent\scw-webui\src\main\resources\static\static\.static\.static" />
+      <recent name="G:\IDEAworkspace\scw-parent\scw-webui\src\main\resources\static\static\.static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mcw.scw.order.vo.resp" />
+      <recent name="com.mcw.scw.user.vo.resp" />
+      <recent name="com.mcw.scw.webui.vo.resp" />
+      <recent name="com.mcw.scw.webui.vo.req" />
+      <recent name="com.mcw.scw.webui.constant" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\IDEAworkspace\scw-parent\scw-webui\src\main\resources\templates\member" />
+      <recent name="G:\IDEAworkspace\scw-parent\scw-webui\src\main\resources\templates" />
+      <recent name="G:\IDEAworkspace\scw-parent\scw-webui\src\main\java\com\mcw\scw\webui\vo\req" />
+      <recent name="G:\IDEAworkspace\scw-parent\scw-webui\src\main\resources\templates\project" />
+      <recent name="G:\IDEAworkspace\scw-parent\scw-project\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+    <option name="contentProportion" value="0.24976958" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.ScwUserApplication">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ScwOrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="scw-order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mcw.scw.ScwOrderApplication" />
+    </configuration>
+    <configuration name="ScwProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="scw-project" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mcw.scw.ScwProjectApplication" />
+    </configuration>
+    <configuration name="ScwUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="scw-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mcw.scw.ScwUserApplication" />
+    </configuration>
+    <configuration name="ScwWebuiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="scw-webui" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mcw.scw.ScwWebuiApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ScwUserApplication" />
+      <item itemvalue="Spring Boot.ScwProjectApplication" />
+      <item itemvalue="Spring Boot.ScwWebuiApplication" />
+      <item itemvalue="Spring Boot.ScwOrderApplication" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5895c8d-2334-4057-a3e1-ccc6894f8382" name="Default" comment="" />
+      <created>1576115326865</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576115326865</updated>
+      <workItem from="1576115328995" duration="10959000" />
+      <workItem from="1576132729915" duration="1834000" />
+      <workItem from="1576141274693" duration="733000" />
+      <workItem from="1576204176565" duration="19893000" />
+      <workItem from="1576292695821" duration="4455000" />
+      <workItem from="1576466765367" duration="682000" />
+      <workItem from="1576472822596" duration="14067000" />
+      <workItem from="1576494843182" duration="5951000" />
+      <workItem from="1576586874520" duration="6625000" />
+      <workItem from="1576656914196" duration="3110000" />
+      <workItem from="1576662122258" duration="7176000" />
+      <workItem from="1576733431228" duration="13977000" />
+      <workItem from="1576754106376" duration="10954000" />
+      <workItem from="1576809386463" duration="20730000" />
+      <workItem from="1576844591724" duration="4467000" />
+      <workItem from="1576897539714" duration="4062000" />
+      <workItem from="1576980192333" duration="30136000" />
+      <workItem from="1577082388071" duration="26730000" />
+      <workItem from="1577155280228" duration="21870000" />
+      <workItem from="1577342774734" duration="9392000" />
+      <workItem from="1577359237387" duration="11230000" />
+      <workItem from="1577416588430" duration="5471000" />
+      <workItem from="1577424714452" duration="25569000" />
+      <workItem from="1577501097547" duration="31596000" />
+      <workItem from="1577628761454" duration="124000" />
+      <workItem from="1577701845856" duration="3991000" />
+      <workItem from="1578139518009" duration="6021000" />
+      <workItem from="1578205153089" duration="1217000" />
+      <workItem from="1578286954125" duration="14257000" />
+      <workItem from="1579163444088" duration="155000" />
+      <workItem from="1581666996595" duration="7356000" />
+      <workItem from="1582187748606" duration="14374000" />
+      <workItem from="1582283207548" duration="10074000" />
+      <workItem from="1582294339864" duration="750000" />
+      <workItem from="1582548477807" duration="485000" />
+      <workItem from="1582707240299" duration="4519000" />
+      <workItem from="1583416373780" duration="189000" />
+      <workItem from="1583644647959" duration="828000" />
+      <workItem from="1583646514092" duration="139000" />
+      <workItem from="1583647818301" duration="113000" />
+      <workItem from="1583648758343" duration="1002000" />
+      <workItem from="1583737053067" duration="79000" />
+      <workItem from="1583737350507" duration="104000" />
+      <workItem from="1583745261685" duration="2050000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ScwUserApplicationTests_test02 - 2019.12.12 at 11h 50m 29s.xml">
+      <configuration name="ScwUserApplicationTests.test02" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScwUserApplicationTests_test02 - 2019.12.12 at 11h 52m 33s.xml">
+      <configuration name="ScwUserApplicationTests.test02" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScwUserApplicationTests_test02 - 2019.12.12 at 12h 12m 33s.xml">
+      <configuration name="ScwUserApplicationTests.test02" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScwUserApplicationTests_test02 - 2019.12.12 at 12h 18m 50s.xml">
+      <configuration name="ScwUserApplicationTests.test02" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScwUserApplicationTests_test02 - 2019.12.12 at 14h 09m 54s.xml">
+      <configuration name="ScwUserApplicationTests.test02" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScwUserApplicationTests_test03 - 2019.12.12 at 14h 10m 22s.xml">
+      <configuration name="ScwUserApplicationTests.test03" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScwUserApplicationTests_test02 - 2019.12.12 at 14h 14m 20s.xml">
+      <configuration name="ScwUserApplicationTests.test02" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScwUserApplicationTests_test02 - 2019.12.12 at 14h 16m 38s.xml">
+      <configuration name="ScwUserApplicationTests.test02" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScwUserApplicationTests_test02 - 2019.12.12 at 14h 18m 42s.xml">
+      <configuration name="ScwUserApplicationTests.test02" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScwUserApplicationTests_test03 - 2019.12.12 at 14h 19m 15s.xml">
+      <configuration name="ScwUserApplicationTests.test03" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="359496000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5004445" side_tool="true" weight="0.3767507" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.17328326" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info anchor="right" id="Word Book" order="4" side_tool="true" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info anchor="bottom" id="Java Enterprise" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Run Dashboard" order="4" sideWeight="0.49955556" weight="0.37114847" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="5" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="14" weight="0.3517647" />
+      <window_info anchor="bottom" id="Spring" order="6" weight="0.32941177" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49837133" visible="true" weight="0.20225322" />
+      <window_info anchor="right" id="Bean Validation" order="3" weight="0.32977778" />
+      <window_info id="Web" order="5" sideWeight="0.50162864" side_tool="true" weight="0.26555794" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.27411765" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Run Dashboard" order="7" weight="0.32916668" />
+      <window_info id="Designer" order="0" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="bottom" id="Spring" order="0" />
+      <window_info id="Image Layers" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.5117647" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32916668" />
+      <window_info anchor="bottom" id="Messages" order="3" />
+      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="4" />
+      <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
+      <window_info anchor="right" id="Maven Projects" order="2" weight="0.32939914" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.15075107" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="6" weight="0.32977778" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="24" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/scw-order/src/main/java/com/mcw/scw/ScwOrderApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-order/src/main/java/com/mcw/scw/order/controller/TOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-126">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-order/src/main/java/com/mcw/scw/order/mapper/TTransactionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-order/src/main/java/com/mcw/scw/order/mapper/TOrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-order/src/main/java/com/mcw/scw/order/service/impl/TOrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-order/src/main/java/com/mcw/scw/order/service/impl/TProjectServiceFeignExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-order/src/main/java/com/mcw/scw/order/config/AppSwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/maven/maven_repository/org/springframework/boot/spring-boot-autoconfigure/2.2.2.RELEASE/spring-boot-autoconfigure-2.2.2.RELEASE.jar!/org/springframework/boot/autoconfigure/quartz/QuartzProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1003">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/maven/maven_repository/org/springframework/boot/spring-boot-autoconfigure/2.2.2.RELEASE/spring-boot-autoconfigure-2.2.2.RELEASE.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-project/src/main/resources/application-prod.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-project/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-project/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/ScwProjectApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/project/controller/ProjectOperationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1306">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/project/controller/ProjectInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/project/service/MemberServiceFeign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/project/service/ProjectInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/project/service/TProjectService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-user/src/main/java/com/mcw/scw/user/component/HttpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-777">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-user/src/main/java/com/mcw/scw/user/component/SmsTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-user/src/main/java/com/mcw/scw/user/config/AppSwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-user/src/main/java/com/mcw/scw/user/controller/TMbmberController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3679">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-user/src/main/java/com/mcw/scw/user/controller/UserLoginRegistController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1619">
+          <caret line="105" column="14" lean-forward="true" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-user/src/main/java/com/mcw/scw/user/exp/UserException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-user/src/main/java/com/mcw/scw/user/enums/UserExceptionEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-user/src/main/java/com/mcw/scw/user/service/impl/TMemberServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-user/src/main/java/com/mcw/scw/ScwUserApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-user/src/main/java/com/mcw/scw/user/service/TMemberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/maven/maven_repository/org/springframework/boot/spring-boot-autoconfigure/2.2.2.RELEASE/spring-boot-autoconfigure-2.2.2.RELEASE.jar!/org/springframework/boot/autoconfigure/transaction/PlatformTransactionManagerCustomizer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/maven/maven_repository/org/springframework/boot/spring-boot-autoconfigure/2.2.2.RELEASE/spring-boot-autoconfigure-2.2.2.RELEASE.jar!/org/springframework/boot/autoconfigure/jdbc/DataSourceTransactionManagerAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/maven/maven_repository/org/springframework/boot/spring-boot-autoconfigure/2.2.2.RELEASE/spring-boot-autoconfigure-2.2.2.RELEASE.jar!/org/springframework/boot/autoconfigure/transaction/TransactionAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1021">
+          <caret line="36" column="115" selection-start-line="36" selection-start-column="115" selection-end-line="36" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/maven/maven_repository/org/springframework/boot/spring-boot-autoconfigure/2.2.2.RELEASE/spring-boot-autoconfigure-2.2.2.RELEASE.jar!/org/springframework/boot/autoconfigure/transaction/TransactionProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/webui/config/AppWebMvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/webui/config/AlipayConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-546">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-webui/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-webui/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/webui/controller/TProjectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3889">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/webui/controller/TOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/webui/controller/TMemberController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-676">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/webui/controller/DispatcherController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1403">
+          <caret line="97" column="29" lean-forward="true" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/webui/vo/req/OrderFormInfoSubmitVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/webui/vo/req/BaseVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/project/config/AppSwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/project/config/AppDuridConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/project/config/AppProjectConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/project/controller/ProjectCreateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-project/src/main/java/com/mcw/scw/project/component/OssTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-webui/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/webui/service/TMemberServiceFeign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-webui/src/main/java/com/mcw/scw/ScwWebuiApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scw-webui/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="52" column="67" lean-forward="true" selection-start-line="52" selection-start-column="67" selection-end-line="52" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (scw-webui)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>scw-webui</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$/scw-project" />
+    <option value="mybatis-generator:generate" />
+  </component>
+</project>
